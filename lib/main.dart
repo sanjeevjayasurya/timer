@@ -14,14 +14,24 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Timer app'),
-        ),
-        body:Center(
-          child: Text('Timer number goes here'),
-        )
-      )
+      home: HomePage()
     );
   }
 }
+
+class HomePage  extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar:AppBar(
+          title: Text('Timer app'),
+        ),
+        body: Center(
+          child: Text('Timer number goes here'),
+        )
+    )
+  }
+}
+
