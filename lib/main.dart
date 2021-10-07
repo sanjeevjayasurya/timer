@@ -10,7 +10,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Timer App'
-    )
+      title: 'Timer App',
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Timer app'),
+        ),
+        body:Center(
+          child: Text('Timer number goes here'),
+        )
+      )
+    );
   }
 }
