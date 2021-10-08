@@ -70,8 +70,39 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(defaultPadding),
               ),
+              Expanded(child: Text("Timer should be placed here")),
+              Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(defaultPadding),
+                  ),
+                  Expanded(
+                      child: Button(
+                    color: Color(0xff212121),
+                    text: 'Stop',
+                    onPressed: emptyMethod,
+                    size: 5.0,
+                    textColor: Colors.white,
+                  )),
+                  Padding(
+                    padding: EdgeInsets.all(defaultPadding),
+                  ),
+                  Expanded(
+                      child: Button(
+                    color: Color(0xff009688),
+                    text: 'Restart',
+                    onPressed: emptyMethod,
+                    size: 5.0,
+                    textColor: Colors.white,
+                  )),
+                  Padding(
+                    padding: EdgeInsets.all(defaultPadding),
+                  ),
+                ],
+              )
             ],
           ),
-        ]));
+        ])
+    );
   }
 }
